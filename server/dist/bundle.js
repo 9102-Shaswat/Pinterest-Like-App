@@ -1,0 +1,2 @@
+(()=>{var r={94:r=>{r.exports.add=function(){for(var r=arguments.length,e=new Array(r),o=0;o<r;o++)e[o]=arguments[o];return e.reduce(((r,e)=>r+e),0)}}},e={};function o(t){var n=e[t];if(void 0!==n)return n.exports;var a=e[t]={exports:{}};return r[t](a,a.exports,o),a.exports}(()=>{var{add:r}=o(94);console.log(r(1,2,8,4,5,99))})()})();
+//# sourceMappingURL=bundle.js.map
