@@ -1,6 +1,7 @@
-const path =require('path')
+const path = require('path');
+const NodemonPlugin = require('nodemon-webpack-plugin');
 
-module.exports={
+module.exports = {
     entry:'./src/index.js',
     output:{
         filename:'bundle.js',
@@ -12,11 +13,12 @@ module.exports={
             {
                 test:/\.js$/,
                 loader:'babel-loader',
+                exclude:/node_modules/,
             }
         ]
     },
     devtool:'source-map',
     plugins:[
-        new  NodemonPlugin()
+        new NodemonPlugin()
     ]
 }
